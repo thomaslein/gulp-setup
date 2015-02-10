@@ -38,7 +38,6 @@ gulp.task('browserify', function() {
 			.on('end', bundleLogger.end);
 	};
 
-
 	if(global.isWatching) {
 		bundler.on('update', bundle);
 	}
