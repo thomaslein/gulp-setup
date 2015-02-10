@@ -4,6 +4,7 @@ var bundleLogger = require('../util/bundleLogger');
 var gulp         = require('gulp');
 var handleErrors = require('../util/handleErrors');
 var source       = require('vinyl-source-stream');
+var livereload   = require('gulp-livereload');
 
 gulp.task('browserify', function() {
 
@@ -35,7 +36,8 @@ gulp.task('browserify', function() {
 			// Specify the output destination
 			.pipe(gulp.dest('./www/assets/js/'))
 			// Log when bundling completes!
-			.on('end', bundleLogger.end);
+			.on('end', bundleLogger.end)
+			.pipe(livereload());
 	};
 
 	if(global.isWatching) {

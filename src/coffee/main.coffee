@@ -1,7 +1,6 @@
-ready = require('dom.ready');
+ready = require('dom.ready')
 
 init = =>
-	console.log('foooo')
-	hei = 'heipådeg'
+	console.log('init')
 
 ready(init)

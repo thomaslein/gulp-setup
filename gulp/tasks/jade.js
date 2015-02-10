@@ -1,5 +1,6 @@
 var jade = require('gulp-jade');
 var gulp = require('gulp');
+var livereload = require('gulp-livereload');
 
 gulp.task('jade', function() {
   var YOUR_LOCALS = {};
@@ -10,4 +11,5 @@ gulp.task('jade', function() {
       pretty: true
     }))
     .pipe(gulp.dest('./www/'))
+    .pipe(livereload());
 });
