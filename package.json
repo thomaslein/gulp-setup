@@ -4,7 +4,8 @@
   "description": "A gulp stater project",
   "main": "gulpfile.js",
   "dependencies": {
-    "nib": "^1.1.0"
+    "nib": "^1.1.0",
+    "dom.ready": "git://github.com/thomaslein/dom.ready.git#0.0.2"
   },
   "devDependencies": {
     "browserify": "^8.1.0",

@@ -1,4 +1,7 @@
-init = =>
-	console.log('foo')
+ready = require('dom.ready');
 
-init()
+init = =>
+	console.log('foooo')
+	hei = 'heipådeg'
+
+ready(init)
